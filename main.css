@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #4B6D73;
+  padding: 15px;
+  transition: 0.2s;
+}
+
+#navbar a:hover {
+  color: #aaa;
+}
+
+#welcome-section {
+  min-height: 100vh;
+  background-color: #97D8E3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    #welcome-section h1 {
+        font-size: 40px;
+    }
+  
+    #welcome-section p {
+        font-size: 15px;
+    }
+}
+
+#welcome-section p {
+  color: #4B6D73;
+  font-size: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80vw;
+  padding: 55px;
+}
+
+#projects h1 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#project-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1550px) {
+    #projects {
+        width: 100vw;
+    }
+}
+
+.project-tile {
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  margin: 40px 100px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px -2px 2px 0.05px rgba(0, 0, 0, 0.05);
+}
+
+.project-tile:hover {
+  border: 1px solid #aaa;
+}
+
+.project-tile img {
+  height: 180px;
+  width: 180px;
+  border: 1px solid #d4d4d4;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.project-tile p {
+  background-color: #f0f0f0;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  margin-top: -10px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+#contact {
+  background-color: #F38486;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#contact h1 {
+  font-size: 40px;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: 400;
+  color: #fff;
+  margin: 30px;
+}
+
+#contact-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  width: 50vw;
+}
+
+#contact-icons a {
+  color: #fff;
+  font-size: 80px;
+  transition: 0.2s;
+}
+
+#contact-icons a:hover {
+  color: #A3595A;
+}
+
+@media only screen and (max-width: 550px) {
+    #contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+  background-color: #707072;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
