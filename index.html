@@ -51,6 +51,11 @@
           <img src="https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project">
           <p>Project #6</p>
       </a>
+
+      <a href="#" class="project-tile">
+          <h3 id="openingCrawl"></h3>
+          <p id="movieTitle">Star Wars API</p>
+      </a>
     </div>
     
   </section>
@@ -68,7 +73,22 @@
   
   <footer>
     <p>**This is just a fake portfolio...All the projects given are not real...</p>
-  </footer>
+  </footer> 
+
+  <script>
+    let openingCrawl = document.querySelector("#openingCrawl");
+    let movieTitle = document.querySelector("#movieTitle");
+
+    fetch('https://swapi.co/api/films/1')
+      .then(function(response) {
+        return response.json();
+    })
+      .then(function(myJson) {
+        openingCrawl.textContent = myJson.opening_crawl;
+        movieTitle.textContent = myJson.title;
+        console.log(myJson);
+    });
+  </script>
 </body>
 
 </html>
