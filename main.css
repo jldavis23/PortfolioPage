@@ -35,7 +35,7 @@
 }
 
 #welcome-section h1 {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 80px;
   font-weight: 400;
   margin-bottom: 8px;
@@ -67,7 +67,7 @@
 }
 
 #projects h1 {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 40px;
   font-weight: 400;
   text-align: center;
@@ -134,7 +134,7 @@
 
 #contact h1 {
   font-size: 40px;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Poiret One', cursive;
   font-weight: 400;
   color: #fff;
   margin: 30px;
@@ -171,9 +171,4 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-h3 {
-  /* width: 200px;
-  height: 200px; */
 }
