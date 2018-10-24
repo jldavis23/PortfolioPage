@@ -123,7 +123,7 @@
   justify-content: center;
 }
 
-/* STAR WARS SECTION */
+/* STAR WARS PLANET SECTION */
 
 #star-wars-planets {
   font-family: 'Montserrat', sans-serif;
@@ -139,7 +139,7 @@
 #swapi-display {
   background-color: #000;
   color: #fff;
-  border: 2px solid yellow;
+  border: 2px solid #ffe81a;
   border-radius: 10px;
   padding: 20px;
   width: 400px;
@@ -176,6 +176,60 @@
 #swapi-button:hover {
   background-color: #aaa;
   cursor: pointer;
+}
+
+/* STAR WARS FILMS SECTION */
+
+#star-wars-films {
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "star-wars-image swapi-title opening-crawl"
+}
+
+#star-wars-films > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #000;
+  max-height: 100%;
+  width: 100%;
+}
+
+#star-wars-films img {
+  /* max-height: 100%;
+  width: 100%; */
+}
+
+#star-wars-films h1 {
+  /* font-size: 4vw; */
+  text-align: center;
+  color: #fff;
+}
+
+#star-wars-films p {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  color: #ffe81a;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #star-wars-films {
+    width: 500px;
+    margin: 10px auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: none;
+    grid-template-areas:
+      "star-wars-image"
+      "swapi-title"
+      "opening-crawl"
+  }
 }
 
 /* CONTACT SECTION */

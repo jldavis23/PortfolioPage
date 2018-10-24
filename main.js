@@ -1,5 +1,7 @@
 import { planets } from '/assets/planets.js'
+import { films } from '/assets/films.js'
 
+// PLANET 
 let swapiButton = document.querySelector("#swapi-button");
 let swapiList = document.querySelector("#swapi-list");
 
@@ -26,3 +28,12 @@ function showPlanet() {
 
 swapiButton.addEventListener("click", removePlanet)
 swapiButton.addEventListener("click", showPlanet);
+
+// FILMS
+let displayedFilm = films[Math.floor((Math.random() * films.length))];
+
+let swapiTitle = document.querySelector('#swapi-title');
+swapiTitle.textContent = displayedFilm.title.toUpperCase();
+
+let openingCrawl = document.querySelector('#opening-crawl');
+openingCrawl.textContent = displayedFilm.opening_crawl;
